@@ -1,0 +1,24 @@
+query {
+  getUsers {
+    id
+    name
+    email
+    roles
+  }
+}
+
+query {
+  getUser(id: "1") {
+    id
+    name
+    email
+  }
+}
+
+mutation {
+  createUser(name: "Charlie", email: "charlie@example.com") {
+    id
+    name
+    email
+  }
+}
